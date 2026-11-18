@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 4 - Details | My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header>
+    <div class="logo"><a href="index.html" style="text-decoration:none; color:inherit;">Portfolio</a></div>
+    <nav>
+      <ul>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#works">Works</a></li>
+        <li><a href="index.html#update">Update</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 作品詳細コンテンツ -->
+  <main class="container">
+    <!-- トップへ戻るリンク -->
+    <p><a href="index.html#works">&larr; 作品一覧に戻る</a></p>
+
+    <h1 style="margin: 1.5rem 0;">Unityで作成したターン制ゲーム</h1>
+    
+    <!-- スライドショー -->
+<div class="slideshow" id="slideshow">
+
+  <img src="images/un1.png" class="slide active" alt="画像1">
+
+  <img src="images/un2.png" class="slide" alt="画像2">
+
+  <img src="images/un3.png" class="slide" alt="画像3">
+
+  <img src="images/un4.png" class="slide" alt="画像4">
+
+</div>
+
+<!-- 下の丸いボタン -->
+<div class="slide-dots" id="slide-dots">
+  <button class="dot active" aria-label="画像1"></button>
+  <button class="dot" aria-label="画像2"></button>
+  <button class="dot" aria-label="画像3"></button>
+  <button class="dot" aria-label="画像4"></button>
+</div>
+
+<script src="main.js"></script>
+
+<section class="project-section">
+  <h2>概要</h2>
+  <p>UnityとC#を使って作成したターン制のゲームです。プレイヤーとコンピュータが交互に行動して戦う、コマンド選択式のゲームです。
+    Unityを触ってみたいと感じていたので、GoogleColabで作成したターン制ゲームをUnityでリメイクしました。
+  </p>
+  <p>最終更新日: 2026/11/12</p>
+</section>
+
+<section class="project-section">
+  <h2>遊ぶ上での注意点</h2>
+  <p>このゲームはUnityで作成したため、ブラウザ上での動作が不安定な場合があります。もし動作が重い場合は、ブラウザを再起動するか、別のブラウザで試してみてください。
+    また、スマホ等の縦長の機種で遊ぶ際には必ず画面は横向きにして遊んでください。縦向きのままではレイアウトが崩れて好ましくない体験になります。
+  </p>
+</section>
+
+<!-- 動画表示エリア -->
+<div class="video-section">
+
+  <video controls class="main-video">
+    <source src="images/un5.mp4" type="video/mp4">
+    お使いのブラウザは動画に対応していません。
+  </video>
+
+  <p class="video-caption">実際の動画</p>
+
+</div>
+
+</div>
+
+    <section class="project-section" style="margin-top: 2rem;">
+      <h2>使用技術</h2>
+      <ul>
+        <li><strong>使用技術:</strong> Unity 6.3 LTS,C#</li>
+        <li><strong>制作期間:</strong> 30時間</li>
+      </ul>
+    </section>
+
+    <section class="project-section" style="margin-top: 2rem;">
+      <h2>工夫した点・苦労した点</h2>
+      <p>初めてUnityでゲームを作るということで。GoogleColabで作成したもののリメイクを作成しました。複雑なスキルは再現が難しく、キャラも複数となったので大多数のキャラのスキルはAIを用いて作成しました。また、キャラの調整がとても難しいと感じました。キャラを追加しやすいようにプログラムを作成しました。
+      <br>また、このゲームを実際にあげる時、日本語のみ表示が消えるというアクシデントがありました。そのため、フォントを入れたり、それによるプログラムの修正などを行いました。
+      </p>
+      <a href="https://ryouon.github.io/3vs3game/" class="more-link"> 実際にプレイする &rarr;</a>
+      <br>
+      <a href="https://ryouon.github.io/portfolio/project1.html" class="more-link"> リメイク元の作品に飛ぶ &rarr;</a>
+    </section>
+    
+    <div style="margin-top: 3rem; text-align: center;">
+      <a href="index.html#works" class="btn">作品一覧に戻る</a>
+    </div>
+  </main>
+
+  <!-- フッター -->
+  <footer>
+    <p>&copy; 2026 ryouon. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
